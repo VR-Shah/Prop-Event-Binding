@@ -1,0 +1,30 @@
+<!-- <app-form (emailSubmit)="emailSubmitted($event)"></app-form>
+<app-table *ngFor="let element of emailElement;let i=index"
+ [ele]="element"
+ [name]="element.name">
+</app-table> -->
+<!-- <button (click)="onChange()" class="btn btn-primary">Change the first element</button> -->
+<!-- <app-template-referance></app-template-referance> -->
+
+<app-game-component (gameStart)="startGameEvent($event)"></app-game-component>
+
+<!-- <app-game-component (gameStop)="stopGameEvent($event)"></app-game-component> -->
+<!-- <app-even *ngIf="abc %2 == 0"></app-even> -->
+
+<app-even *ngFor="let number of evenNumber"
+[number]="number"></app-even>
+
+<button (click)="onlyOdd!=onlyOdd">Toggle the Button </button>
+
+<div class="container">
+    <div *ngIf="onlyOdd">
+        <ul>
+            <li *ngFor="let even evenNumbers">{{even}}</li>
+        </ul>
+    </div>
+    <div *ngIf="!onlyOdd">
+        <ul>
+            <li *ngFor="let odd oddNumbers">{{odd}}</li>
+        </ul>
+    </div>
+</div>

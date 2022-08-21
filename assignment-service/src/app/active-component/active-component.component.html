@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="col-sm-6">
+        <div class="row">
+            <p *ngFor="let active of activeUser; let i = index">{{active}} | 
+                <a (click)="setToInactive(i)">Set To Inactive</a></p>
+        </div>
+    </div>
+</div>
